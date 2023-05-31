@@ -61,7 +61,7 @@ function HandleBigRating(rate: Rate) {
 }
 
 type Value = {
-    value: number
+    value: any
 }
 
 function HandleLittleStars(value: Value) {
@@ -111,7 +111,7 @@ function HandleLittleStars(value: Value) {
 
 }
 
-export function Rating({ big, note_id, value}: {big: boolean, note_id: number, value: number|undefined}) {
+export function Rating({ note_id, value}: {note_id: number, value: any}) {
     const [rate, setRate] = useState<number>()
     const [note, setNote] = useState<Note>()
 

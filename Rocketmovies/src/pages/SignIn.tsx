@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import { useAuth } from '../hooks/auth'
 
+import bgCover from '../assets/cover.svg'
 import { Title } from '../components/Title'
 import { Input } from '../components/Input'
 import { Button } from '../components/Button'
@@ -57,9 +58,8 @@ export function SignIn() {
 
             </div>
 
-            <div className="flex-1 bg-BG_COVER bg-no-repeat bg-center bg-cover">
-            </div>
 
+            <img src={bgCover} alt="" className="flex-1 object-cover "/>
         </div>
     )
 }

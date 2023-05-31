@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 import { api } from '../services/api'
@@ -10,8 +9,6 @@ import { Input } from './Input'
 export function Header({onChange, value}: {onChange: any, value: string}) {
     const { userDataAndFunc } = useAuth()
     const { signOut, user } = userDataAndFunc
-
-    const [search, setSearch] = useState('')
         
     const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder
 

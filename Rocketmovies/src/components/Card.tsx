@@ -15,6 +15,7 @@ type Card = {
 export function Card({ key, data, onClick }: Card) {
     return (
         <button 
+            key={key}
             onClick={onClick}
             className=" bg-PINK bg-opacity-5 p-8 rounded-2xl h-56"
         >
@@ -23,7 +24,6 @@ export function Card({ key, data, onClick }: Card) {
             </h2>
             <div className=" mb-4">
                 <Rating 
-                    big={false}
                     note_id={data.id}
                     value={data.rating}
                 />

@@ -4,6 +4,7 @@ import { FiArrowLeft } from 'react-icons/fi'
 
 import { api } from '../services/api'
 
+import bgCover from '../assets/cover.svg'
 import { Title } from '../components/Title'
 import { Input } from '../components/Input'
 import { Button } from '../components/Button'
@@ -84,8 +85,7 @@ export function SignUp() {
 
             </div>
 
-            <div className="flex-1 bg-BG_COVER bg-no-repeat bg-center bg-cover">
-            </div>
+            <img src={bgCover} alt="" className="flex-1 object-cover "/>
 
         </div>
     )

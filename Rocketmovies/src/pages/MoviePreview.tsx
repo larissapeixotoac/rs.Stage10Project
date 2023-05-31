@@ -65,7 +65,6 @@ export function MoviePreview() {
                             {note.title}
                         </h1>
                         <Rating
-                            big={true}
                             note_id={note.id}
                             value={undefined}
                         />
